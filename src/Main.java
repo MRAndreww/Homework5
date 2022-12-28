@@ -73,28 +73,37 @@ public class Main {
     }
     public static void task6() {
         System.out.println("Задача 6");
-        int passengers = 104;
-        if (passengers < 60) {
-            System.out.println("В вагоне есть сидячии и стоячие места");
+        int totalSeats = 102;
+        int chairs = 60;
+        int placeToStand = totalSeats - chairs;
+
+        int passengerSiting = 60;
+        int otherPassengers = 80;
+        if (passengerSiting < chairs) {
+            System.out.println("В вагоне есть " + (chairs-passengerSiting) + " сидячии мест");
         }
-                if (passengers >= 60 && passengers < 102) {
-                  System.out.println("В вагоне есть только стоячие места");}
-               else {
-                  System.out.println("В вагоне нет мет");
+        else {
+            System.out.println("В вагоне нет сидячих мест");
+        }
+        if (otherPassengers < placeToStand) {
+            System.out.println("В вагоне есть " + (placeToStand-otherPassengers) + " стоячих мест");
+        }
+        else {
+            System.out.println("В вагоне нет стоячих мест");
                 }
                                 }
 
     public static void task7() {
         System.out.println("Задача 7");
         int one = 75;
-        int two = 75;
+        int two = 108;
         int three = 58;
         if (one>=two && one>=three) {
-            System.out.println("Число " + one + " большее из трёх чисел"); }
+            System.out.println("Число " + one + " большее из трёх чисел!"); }
         else if (two>=one && two>=three) {
             System.out.println("Число " + two + " большее из трёх чисел"); }
         else {
-            System.out.println("Число " + three + " большее из трёх чисел"); }
+            System.out.println("Число " + three + " большее из трёх чисел!"); }
         }
 
         }
