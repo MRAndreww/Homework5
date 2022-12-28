@@ -90,11 +90,11 @@ public class Main {
         int two = 75;
         int three = 58;
         if (one>=two && one>=three) {
-            System.out.println("Число " + one + " большее из трёх чисел"); }
+            System.out.println("Число " + one + " большее из трёх чисел!"); }
         else if (two>=one && two>=three) {
-            System.out.println("Число " + two + " большее из трёх чисел"); }
+            System.out.println("Число " + two + " большее из трёх чисел!"); }
         else {
-            System.out.println("Число " + three + " большее из трёх чисел"); }
+            System.out.println("Число " + three + " большее из трёх чисел!"); }
         }
 
         }
